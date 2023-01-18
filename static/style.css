@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.menu{
+    width: 380px;
+    margin: 140px auto;
+}
+
+.menu .btn{
+    display: flex;
+    align-items: center;
+    height: 58px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: 400;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.menu.active .btn i{
+    transform: rotate(-180deg);
+}
+
+.menu .options{
+    position: relative;
+    padding: 25px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+
+
+.options .option:hover{
+    background: #F2F2F2;
+}
+
+.option i{
+    font-size: 29px;
+    margin-right: 12px;
+}
+
+.option .option-text{
+    color: #333;
+    font-size: 18px;
+}
